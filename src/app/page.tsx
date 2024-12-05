@@ -27,7 +27,7 @@ export default function Home() {
 
         <Card className="hover:bg-blue-600 duration-500 hover:scale-95 hover:text-white bg-sky-500">
           <Link href="/novos-clientes">
-            <CardHeader className="">
+            <CardHeader>
               <div className="flex items-center gap-4 justify-center hover:text-white">
                 <CardTitle className="text-lg sm:text-xl text-white select-none">Novos Clientes</CardTitle>
                 <Users className="text-white" />
@@ -42,32 +42,32 @@ export default function Home() {
           </Link>
         </Card>
 
-        <Card>
+        <Card className="hover:bg-blue-600 duration-500 hover:scale-95 hover:text-white bg-sky-500 cursor-pointer">
           <CardHeader>
-            <div className="flex items-center gap-4 justify-center">
-              <CardTitle className="text-lg sm:text-xl text-gray-700 select-none">Faturamento 1/6</CardTitle>
-              <DollarSign />
+            <div className="flex items-center gap-4 justify-center hover:text-white">
+              <CardTitle className="text-lg sm:text-xl text-white select-none">Faturamento 1/6</CardTitle>
+              <DollarSign className="text-white"/>
             </div>
-            <CardDescription>
-              <h3 className="text-center">Fechamento do semestre 2024.</h3>
+            <CardDescription className="hover:text-white">
+              <h3 className="text-center text-white">Fechamento do semestre 2024.</h3>
             </CardDescription>
             <CardContent>
-              <p className="text-base sm:text-lg font-bold text-center"> R$ 23.990,80 </p>
+              <p className="text-base sm:text-lg font-bold text-center text-white"> R$ 23.990,80 </p>
             </CardContent>
           </CardHeader>
         </Card>
 
-        <Card>
+        <Card className="hover:bg-blue-600 duration-500 hover:scale-95 hover:text-white bg-sky-500 cursor-pointer">
           <CardHeader>
-            <div className="flex items-center gap-4 justify-center">
-              <CardTitle className="text-lg sm:text-xl text-gray-700 select-none">Total de Op. 1/6</CardTitle>
-              <Package />
+            <div className="flex items-center gap-4 justify-center hover:text-white">
+              <CardTitle className="text-lg sm:text-xl text-white select-none">Total de Op. 1/6</CardTitle>
+              <Package className="text-white"/>
             </div>
-            <CardDescription>
-              <h3 className="text-center">semestre 2024.</h3>
+            <CardDescription className="hover:text-white">
+              <h3 className="text-center text-white">semestre 2024.</h3>
             </CardDescription>
             <CardContent>
-              <p className="text-base sm:text-lg font-bold text-center"> 2093 itens </p>
+              <p className="text-base sm:text-lg font-bold text-center text-white"> 2093 itens </p>
             </CardContent>
           </CardHeader>
         </Card>
