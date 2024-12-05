@@ -77,7 +77,10 @@ body {
   body {
     @apply bg-background text-foreground;
   }
-  
+  .btn-aside{
+    @apply flex bg-blue-500 h-9 w-9 shrink-0 items-center justify-center
+    text-primary-foreground rounded-full hover:bg-slate-950  hover:scale-110 duration-300 hover:rotate-12
+  }
   :root {
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;

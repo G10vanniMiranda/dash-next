@@ -9,33 +9,34 @@ export default function Home() {
     <main className="sm:ml-14 p-4">
       
       <section className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-auto">        
-        <Card>
-          <CardHeader>
-            <div className="flex gap-4 items-center justify-center">
-              <CardTitle className="text-lg sm:text-xl text-gray-700 select-none">Total vendas</CardTitle>
-              <DollarSign />
+        
+        <Card className="hover:bg-blue-600 duration-500 hover:scale-95 hover:text-white bg-sky-500 cursor-pointer">
+          <CardHeader className="hover:text-white">
+            <div className="flex gap-4 items-center justify-center hover:text-white">
+              <CardTitle className="text-lg sm:text-xl text-white select-none">Total vendas</CardTitle>
+              <DollarSign className="text-white" />
             </div>
-            <CardDescription>
-              <h3 className="text-center">Total vendas em 90 dias.</h3>
+            <CardDescription className="hover:text-white">
+              <h3 className="text-center text-white">Total vendas em 90 dias.</h3>
             </CardDescription>
             <CardContent>
-              <p className="text-base sm:text-lg font-bold text-center">R$ 40.000</p>
+              <p className="text-base sm:text-lg font-bold text-center text-white">R$ 40.000</p>
             </CardContent>
           </CardHeader>
         </Card>
 
-        <Card>
+        <Card className="hover:bg-blue-600 duration-500 hover:scale-95 hover:text-white bg-sky-500">
           <Link href="/novos-clientes">
-            <CardHeader>
-              <div className="flex items-center gap-4 justify-center">
-                <CardTitle className="text-lg sm:text-xl text-gray-700 select-none">Novos Clientes</CardTitle>
-                <Users />
+            <CardHeader className="">
+              <div className="flex items-center gap-4 justify-center hover:text-white">
+                <CardTitle className="text-lg sm:text-xl text-white select-none">Novos Clientes</CardTitle>
+                <Users className="text-white" />
               </div>
-              <CardDescription>
-                <h3 className="text-center">Novos clientes em 30 dias.</h3>
+              <CardDescription className= "hover:text-white">
+                <h3 className="text-center text-white">Novos clientes em 30 dias.</h3>
               </CardDescription>
               <CardContent>
-                <p className="text-base sm:text-lg font-bold text-center"> 03 </p>
+                <p className="text-base sm:text-lg font-bold text-center text-white"> 03 </p>
               </CardContent>
             </CardHeader>
           </Link>
